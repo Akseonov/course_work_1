@@ -24,7 +24,7 @@ class ItemsList {
     }
 
     render() {
-        if(this.loaded && this.filteredItems.length === 0) {
+        if (this.loaded && this.filteredItems.length === 0) {
             return `<div>Ничего не найдено</div>`;
         }
 
@@ -169,9 +169,9 @@ items.fetchItems().then(() => {
 // });
 
 document.querySelector('.cart').addEventListener('change', (event) => {
-    if(event.target.classList.contains('qty')) {
+    if (event.target.classList.contains('qty')) {
         const $parent = event.target.parentElement;
-        if(!cart.update($parent.dataset.id, +event.target.value)) {
+        if (!cart.update($parent.dataset.id, +event.target.value)) {
             event.target.value = 1;
         }
         document.querySelector('.total').innerHTML = cart.total();
@@ -179,10 +179,10 @@ document.querySelector('.cart').addEventListener('change', (event) => {
 });
 
 document.querySelector('.feature__box').addEventListener('click', (event) => {
-    if(event.target.classList.contains('fetured__add')) {
+    if (event.target.classList.contains('fetured__add')) {
         const id = event.target.dataset.id;
         const $item = document.querySelector(`.cart li[data-id="${id}"]`);
-        if($item) {
+        if ($item) {
             const $currentQty = $item.querySelector('.qty');
             $currentQty.value = +$currentQty.value + 1;
             cart.update(id, +$currentQty.value);

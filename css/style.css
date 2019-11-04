@@ -749,6 +749,7 @@ a:hover .subscribe__link {
   margin-left: 92px; }
 
 .subscribe__input {
+  outline: none;
   border-bottom-left-radius: 23px;
   border-top-left-radius: 23px;
   background-color: #e1e1e1;
@@ -758,6 +759,7 @@ a:hover .subscribe__link {
   padding: 0 30px; }
 
 .subscribe__button {
+  outline: none;
   height: 46px;
   padding-left: 18px;
   padding-right: 20px;
