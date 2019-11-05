@@ -69,6 +69,13 @@
       "price": 65.00,
       "url": "img/products_item_6.jpg",
       "qty": 2
+    },
+    {
+      "id": 9,
+      "title": "Coconut People T-shirt",
+      "price": 25.00,
+      "url": "img/products_item_9.jpg",
+      "qty": 1
     }
   ]
 }

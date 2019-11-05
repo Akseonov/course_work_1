@@ -166,7 +166,7 @@ class Cart {
     //         <input class="qty" type="number" value="${item.qty}" />
     //       </li>
     render() {
-        this.element = document.querySelector('.shopping_cart');
+        this.element = document.createElement('div');
         this.element.innerHTML = this.items.map(this.renderItem).join('');
 
         return this.element;
@@ -189,8 +189,9 @@ items2.fetchItems().then(() => {
 
 const cart = new Cart();
 cart.fetchItems().then(() => {
-    document.querySelector('.shopping_cart').appendChild(cart.render());
-    // document.querySelector('.total').innerHTML = cart.total();
+    document.querySelector('.shopping_cart__block').appendChild(cart.render());
+    document.querySelector('.total').innerHTML = `$${cart.total()}`;
+    document.querySelector('.total2').innerHTML = `$${cart.total()}`;
 });
 
 document.querySelector('.cart').addEventListener('change', (event) => {
