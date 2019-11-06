@@ -161,13 +161,30 @@ class Cart {
             </div>
         </div>`
     }
-    //<li data-id="${item.id}">
-    //         <h3>${item.title}</h3>
-    //         <input class="qty" type="number" value="${item.qty}" />
-    //       </li>
+
     render() {
         this.element = document.createElement('div');
         this.element.innerHTML = this.items.map(this.renderItem).join('');
+
+        return this.element;
+    }
+
+    renderItemDrop(item) {
+        return `<div class="cart__prod">
+            <img src="${item.url}" alt="${item.url}" width="72px" height="85px">
+            <div class="prod_block">
+                <p class="prod__name">${item.title}</p>
+                <img src="img/prod_rait.png" alt="">
+                <p class="prod__price">${item.qty} x $${item.price}</p>
+            </div>
+            <i class="fa fa-times-circle"></i>
+        </div>
+        <hr class="cart__hr">`
+    }
+
+    renderDrop() {
+        this.element = document.createElement('div');
+        this.element.innerHTML = this.items.map(this.renderItemDrop).join('');
 
         return this.element;
     }
@@ -192,6 +209,12 @@ cart.fetchItems().then(() => {
     document.querySelector('.shopping_cart__block').appendChild(cart.render());
     document.querySelector('.total').innerHTML = `$${cart.total()}`;
     document.querySelector('.total2').innerHTML = `$${cart.total()}`;
+});
+
+const cart2 = new Cart();
+cart.fetchItems().then(() => {
+    document.querySelector('.cart__drop_items').appendChild(cart.renderDrop());
+    document.querySelector('.cart__total__price').innerHTML = `$${cart.total()}`;
 });
 
 document.querySelector('.cart').addEventListener('change', (event) => {
