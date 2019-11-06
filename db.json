@@ -2,37 +2,80 @@
   "goods": [
     {
       "id": 1,
-      "title": "Компьютерная мышь",
-      "price": 400
+      "title": "Mango People T-shirt",
+      "price": 52.00,
+      "url": "img/products_item_1.jpg"
     },
     {
       "id": 2,
-      "title": "Жесткий диск SSD 1Tb",
-      "price": 10000
+      "title": "Apple People T-shirt",
+      "price": 40.00,
+      "url": "img/products_item_2.jpg"
     },
     {
       "id": 3,
-      "title": "Материнская плата",
-      "price": 4000
+      "title": "Orange People T-shirt",
+      "price": 80.00,
+      "url": "img/products_item_3.jpg"
     },
     {
       "id": 4,
-      "title": "Видео-карта",
-      "price": 15000
+      "title": "Avocado People T-shirt",
+      "price": 60.00,
+      "url": "img/products_item_4.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Pineapple People T-shirt",
+      "price": 70.00,
+      "url": "img/products_item_5.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Banana People T-shirt",
+      "price": 65.00,
+      "url": "img/products_item_6.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Peach People T-shirt",
+      "price": 55.00,
+      "url": "img/products_item_7.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Guacamole People T-shirt",
+      "price": 90.00,
+      "url": "img/products_item_8.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Coconut People T-shirt",
+      "price": 25.00,
+      "url": "img/products_item_9.jpg"
     }
   ],
   "cart": [
     {
-      "id": 3,
-      "title": "Материнская плата",
-      "price": 4000,
-      "qty": 10
+      "id": 2,
+      "title": "Apple People T-shirt",
+      "price": 40.00,
+      "url": "img/products_item_2.jpg",
+      "qty": 1
     },
     {
-      "id": 4,
-      "title": "Видео-карта",
-      "price": 15000,
-      "qty": 8
+      "id": 6,
+      "title": "Banana People T-shirt",
+      "price": 65.00,
+      "url": "img/products_item_6.jpg",
+      "qty": 2
+    },
+    {
+      "id": 9,
+      "title": "Coconut People T-shirt",
+      "price": 25.00,
+      "url": "img/products_item_9.jpg",
+      "qty": 1
     }
   ]
 }

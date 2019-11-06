@@ -10,6 +10,9 @@ a {
   text-decoration: none;
   transition: color 0.5s; }
 
+summary {
+  outline: none; }
+
 .header {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
   border: 1px solid #ececec;
@@ -416,6 +419,7 @@ details.products__category[open] .symbol__aside_3:after {
   margin-top: 15px; }
 
 .fetured__a {
+  outline: none;
   width: 123px;
   height: 39px;
   border: 1px solid #fff;
@@ -428,7 +432,8 @@ details.products__category[open] .symbol__aside_3:after {
   position: absolute;
   top: 98px;
   left: 70px;
-  display: none; }
+  display: none;
+  background-color: rgba(0, 0, 0, 0); }
 
 .fetured__a_2 {
   width: 57px;
@@ -747,6 +752,7 @@ a:hover .subscribe__link {
   margin-left: 92px; }
 
 .subscribe__input {
+  outline: none;
   border-bottom-left-radius: 23px;
   border-top-left-radius: 23px;
   background-color: #e1e1e1;
@@ -756,6 +762,7 @@ a:hover .subscribe__link {
   padding: 0 30px; }
 
 .subscribe__button {
+  outline: none;
   height: 46px;
   padding-left: 18px;
   padding-right: 20px;
@@ -1002,7 +1009,7 @@ a:hover .subscribe__link {
   width: 10px;
   height: 10px;
   box-shadow: 0 0 15px -2px rgba(0, 0, 0, 0.2);
-  /* ╨Ф╨╛╨▒╨░╨▓╨╗╤П╨╡╨╝ ╤В╨╡╨╜╤М ╨┤╨╗╤П ╤Г╨│╨╛╨╗╨║╨░ */
+  /* Добавляем тень для уголка */
   z-index: -1;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg); }
@@ -1044,7 +1051,8 @@ a:hover .subscribe__link {
   padding: 19px 0 0 0;
   background-color: #fff;
   border-radius: 5px;
-  box-shadow: 0 0 15px -2px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 0 15px -2px rgba(0, 0, 0, 0.2);
+  z-index: 1; }
 
 .cart__drop::after,
 .cart__drop::before {
@@ -1056,7 +1064,7 @@ a:hover .subscribe__link {
   width: 10px;
   height: 10px;
   box-shadow: 0 0 15px -2px rgba(0, 0, 0, 0.2);
-  /* ╨Ф╨╛╨▒╨░╨▓╨╗╤П╨╡╨╝ ╤В╨╡╨╜╤М ╨┤╨╗╤П ╤Г╨│╨╛╨╗╨║╨░ */
+  /* Добавляем тень для уголка */
   z-index: -1;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg); }
@@ -1081,6 +1089,9 @@ a:hover .subscribe__link {
   margin-left: 14px; }
 
 .prod__name {
+  width: 80px;
+  white-space: nowrap;
+  overflow: hidden;
   color: #222222;
   font-size: 12px;
   font-weight: 900;
@@ -1111,6 +1122,12 @@ a:hover .subscribe__link {
   margin-bottom: 32px; }
 
 .cart__total__price {
+  color: #222222;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.cart__total__price_text {
   color: #222222;
   font-size: 16px;
   font-weight: 700;
@@ -1193,7 +1210,7 @@ a:hover .subscribe__link {
   width: 10px;
   height: 10px;
   box-shadow: 0 0 15px -2px rgba(0, 0, 0, 0.2);
-  /* ╨Ф╨╛╨▒╨░╨▓╨╗╤П╨╡╨╝ ╤В╨╡╨╜╤М ╨┤╨╗╤П ╤Г╨│╨╛╨╗╨║╨░ */
+  /* Добавляем тень для уголка */
   z-index: -1;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg); }

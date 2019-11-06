@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="javascript.js" defer></script>
 </head>
 
 <body>
@@ -54,29 +55,10 @@
                 <div class="header__cart__block">
                     <img class="header__cart" src="img/cart.svg" alt="cart">
                     <div class="cart__drop">
-                        <div class="cart__prod">
-                            <img src="img/cart_prod1.jpg" alt="">
-                            <div class="prod_block">
-                                <p class="prod__name">Rebox Zane</p>
-                                <img src="img/prod_rait.png" alt="">
-                                <p class="prod__price">1 x $250</p>
-                            </div>
-                            <i class="fa fa-times-circle"></i>
-                        </div>
-                        <hr class="cart__hr">
-                        <div class="cart__prod">
-                            <img src="img/cart_prod2.jpg" alt="">
-                            <div class="prod_block">
-                                <p class="prod__name">Rebox Zane</p>
-                                <img src="img/prod_rait.png" alt="">
-                                <p class="prod__price">1 x $250</p>
-                            </div>
-                            <i class="fa fa-times-circle"></i>
-                        </div>
-                        <hr class="cart__hr">
+                        <div class="cart__drop_items"></div>
                         <div class="cart__total">
-                            <p class="cart__total__price">TOTAL</p>
-                            <p class="cart__total__price">$500.00</p>
+                            <p class="cart__total__price_text">TOTAL</p>
+                            <p class="cart__total__price"></p>
                         </div>
                         <a class="cart__button_a" href="checkout.html">Checkout</a>
                         <a class="cart__button_a" href="#">Go to cart</a>
@@ -299,87 +281,7 @@
             <div class="shopping_cart_box5 shopping_cart_center"><p class="shopping_cart__h1">Subtotal</p></div>
             <div class="shopping_cart_box6 shopping_cart_center"><p class="shopping_cart__h1">ACTION</p></div>
         </div>
-        <div class="shopping_cart__item">
-            <div class="shopping_cart_box1">
-                <div class="shopping_cart_box1_img">
-                    <img class="shopping_cart_img" src="img/products_item_1.jpg" alt="products_item_1">
-                </div>
-                <div class="shopping_cart_box1_p_cont">
-                <p class="shopping_cart_box1_p">Mango  People  T-shirt</p>
-                <p class="shopping_cart_box1_p1"><span class="shopping_cart_box1_span">Color:</span>   Red</p>
-                <p class="shopping_cart_box1_p1"><span class="shopping_cart_box1_span">Size:</span>   Xll</p>
-                </div>
-            </div>
-            <div class="shopping_cart_box2 shopping_cart_center">
-                <p class="shopping_cart_box1_p2">$150</p>
-            </div>
-            <div class="shopping_cart_box3 shopping_cart_center">
-                <input class="shopping_cart_box1_input" type="text" placeholder="2" pattern="\S+[1-100]">
-            </div>
-            <div class="shopping_cart_box4 shopping_cart_center">
-                <p class="shopping_cart_box1_p3">FREE</p>
-            </div>
-            <div class="shopping_cart_box5 shopping_cart_center">
-                <p class="shopping_cart_box1_p2">$300</p>
-            </div>
-            <div class="shopping_cart_box6 shopping_cart_center">
-                <div class="shopping_cart_box6_i"></div>
-            </div>
-        </div>
-        <div class="shopping_cart__item">
-            <div class="shopping_cart_box1">
-                <div class="shopping_cart_box1_img">
-                    <img class="shopping_cart_img" src="img/products_item_2.jpg" alt="products_item_2">
-                </div>
-                <div class="shopping_cart_box1_p_cont">
-                <p class="shopping_cart_box1_p">Mango  People  T-shirt</p>
-                <p class="shopping_cart_box1_p1"><span class="shopping_cart_box1_span">Color:</span>   Red</p>
-                <p class="shopping_cart_box1_p1"><span class="shopping_cart_box1_span">Size:</span>   Xll</p>
-                </div>
-            </div>
-            <div class="shopping_cart_box2 shopping_cart_center">
-                <p class="shopping_cart_box1_p2">$150</p>
-            </div>
-            <div class="shopping_cart_box3 shopping_cart_center">
-                <input class="shopping_cart_box1_input" type="text" placeholder="2" pattern="\S+[1-100]">
-            </div>
-            <div class="shopping_cart_box4 shopping_cart_center">
-                <p class="shopping_cart_box1_p3">FREE</p>
-            </div>
-            <div class="shopping_cart_box5 shopping_cart_center">
-                <p class="shopping_cart_box1_p2">$300</p>
-            </div>
-            <div class="shopping_cart_box6 shopping_cart_center">
-                <div class="shopping_cart_box6_i"></div>
-            </div>
-        </div>
-        <div class="shopping_cart__item_l">
-            <div class="shopping_cart_box1">
-                <div class="shopping_cart_box1_img">
-                    <img class="shopping_cart_img" src="img/products_item_8.jpg" alt="products_item_8">
-                </div>
-                <div class="shopping_cart_box1_p_cont">
-                <p class="shopping_cart_box1_p">Mango  People  T-shirt</p>
-                <p class="shopping_cart_box1_p1"><span class="shopping_cart_box1_span">Color:</span>   Red</p>
-                <p class="shopping_cart_box1_p1"><span class="shopping_cart_box1_span">Size:</span>   Xll</p>
-                </div>
-            </div>
-            <div class="shopping_cart_box2 shopping_cart_center">
-                <p class="shopping_cart_box1_p2">$150</p>
-            </div>
-            <div class="shopping_cart_box3 shopping_cart_center">
-                <input class="shopping_cart_box1_input" type="text" placeholder="2" pattern="\S+[1-100]">
-            </div>
-            <div class="shopping_cart_box4 shopping_cart_center">
-                <p class="shopping_cart_box1_p3">FREE</p>
-            </div>
-            <div class="shopping_cart_box5 shopping_cart_center">
-                <p class="shopping_cart_box1_p2">$300</p>
-            </div>
-            <div class="shopping_cart_box6 shopping_cart_center">
-                <div class="shopping_cart_box6_i"></div>
-            </div>
-        </div>
+        <div class="shopping_cart__block"></div>
         <div class="shopping_cart__botton">
             <a href="#" class="shopping_cart__a">cLEAR SHOPPING CART</a>
             <a href="#" class="shopping_cart__a">cONTINUE sHOPPING</a>
@@ -409,8 +311,8 @@
                 <a href="#" class="shopping_cart__proceed_a">Apply coupon</a>
             </div>
             <div class="shopping_cart__proceed_box3">
-                <p class="shopping_cart__proceed_box3_p">Sub total&nbsp;&nbsp;&nbsp;&nbsp; $900</p>
-                <p class="shopping_cart__proceed_box3_p2">GRAND TOTAL&nbsp;&nbsp;&nbsp;&nbsp; <span>$900</span></p>
+                <p class="shopping_cart__proceed_box3_p">Sub total&nbsp;&nbsp;&nbsp;&nbsp; <span class="total">$900</span></p>
+                <p class="shopping_cart__proceed_box3_p2">GRAND TOTAL&nbsp;&nbsp;&nbsp;&nbsp; <span class="total2">$900</span></p>
                 <hr class="shopping_cart__proceed_box3_hr">
                 <a href="#" class="shopping_cart__proceed_box3_a">proceed to checkout</a>
             </div>
