@@ -102,7 +102,8 @@ class Cart {
                 })
                     .then(response => response.json())
                     .then((item) => {
-                        const $item = document.querySelector(`.cart li[data-id="${id}"]`);
+                        const $item = document.querySelector(`.shopping_cart__block 
+                        .shopping_cart__item[data-id="${id}"]`);
                         if($item) {
                             $item.remove();
                         }
@@ -133,7 +134,7 @@ class Cart {
     }
 
     renderItem(item) {
-        return `<div class="shopping_cart__item">
+        return `<div class="shopping_cart__item" data-id="${item.id}">
             <div class="shopping_cart_box1">
                 <div class="shopping_cart_box1_img">
                     <img class="shopping_cart_img" src="${item.url}" alt="${item.url}">
@@ -217,22 +218,25 @@ cart.fetchItems().then(() => {
     document.querySelector('.cart__total__price').innerHTML = `$${cart.total()}`;
 });
 
-document.querySelector('.cart').addEventListener('change', (event) => {
+document.querySelector('.shopping_cart__block').addEventListener('change', (event) => {
     if (event.target.classList.contains('qty')) {
         const $parent = event.target.parentElement;
         if (!cart.update($parent.dataset.id, +event.target.value)) {
             event.target.value = 1;
         }
         document.querySelector('.total').innerHTML = cart.total();
+        document.querySelector('.total2').innerHTML = cart.total();
+        document.querySelector('.cart__total__price').innerHTML = cart.total();
     }
 });
 
 document.querySelector('.feature__box').addEventListener('click', (event) => {
     if (event.target.classList.contains('fetured__add')) {
         const id = event.target.dataset.id;
-        const $item = document.querySelector(`.cart li[data-id="${id}"]`);
+        const $item = document.querySelector(`.shopping_cart__block 
+        .shopping_cart__item[data-id="${id}"]`);
         if ($item) {
-            const $currentQty = $item.querySelector('.qty');
+            const $currentQty = $item.querySelector('.shopping_cart_box1_input');
             $currentQty.value = +$currentQty.value + 1;
             cart.update(id, +$currentQty.value);
         } else {
